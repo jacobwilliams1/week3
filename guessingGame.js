@@ -19,7 +19,8 @@ function handleGuess() {
     }else{
 $("#message").text("Nope, try again!");
 $("#tbxGuess").val("");
-    }
+    } 
+    $("#tbxGuess").focus();
 }
 
 function playGame() {
