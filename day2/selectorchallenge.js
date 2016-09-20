@@ -1,12 +1,12 @@
-
-$(document).ready(function(){
-        $('#buttonHideShow').click(function(){
-         $("#para1").toggle();
-  });
-})
-$(document).ready(function() {
-    $('h3').remove();
+$(function () {
+$('h1').css({ "font-size":"50px",
+            "color" : "red"});
+    $('#buttonHideShow').click(function() {
+        $("#para1").toggle();
 });
-$(document).ready(function() {
-    $('#li1').remove();
+
+ $('h3').click(function () {
+            $('h3').remove();
+ });
+        $('li').first().attr("style", "color: purple;");
 });
