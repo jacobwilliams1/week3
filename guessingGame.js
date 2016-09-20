@@ -16,10 +16,14 @@ function handleGuess() {
     var guess = $("#tbxGuess").val();
     if (+guess == answer) {
     $("#message").text("You're Right!");
+    $('body').css("background-image", "url(http://20px.com/wp-content/uploads/2013/02/unicorn_pooping_a_rainbow_20px.jpg)");  
+    $("#btnGuess").hide();
     }else{
 $("#message").text("Nope, try again!");
 $("#tbxGuess").val("");
-    } 
+$('body').css("background-color", "red");
+$('body').fadeOut();  
+$('body').fadeIn();     } 
     $("#tbxGuess").focus();
 }
 
